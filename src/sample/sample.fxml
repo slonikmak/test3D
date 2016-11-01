@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Box?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="pane" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Box fx:id="box1" depth="200.0" disable="true" height="200.0" layoutX="250.0" layoutY="250.0" rotate="-0.0" translateZ="100.0" visible="false" width="200.0">
+               <rotationAxis>
+                  <Point3D y="2.0" z="1.0" />
+               </rotationAxis>
+            </Box>
+            <PointLight color="CHARTREUSE" layoutX="74.0" layoutY="421.0" lightOn="true" translateZ="-300.0" />
+            <AmbientLight color="CHARTREUSE" layoutX="454.0" layoutY="26.0" lightOn="true" />
+            <PerspectiveCamera farClip="2000.0" fieldOfView="35.0" translateZ="-1000.0" />
+         </children></Pane>
+      <Slider fx:id="sliderX" layoutX="14.0" layoutY="521.0" />
+      <Label fx:id="lable" layoutX="180.0" layoutY="520.0" text="Label" />
+      <Slider fx:id="sliderY" layoutX="14.0" layoutY="545.0" />
+      <Slider fx:id="sliderZ" layoutX="14.0" layoutY="571.0" />
+      <Slider fx:id="sliderA" layoutX="14.0" layoutY="596.0" />
+      <Label fx:id="labelA" layoutX="180.0" layoutY="595.0" text="Label" />
+      <Pane fx:id="pane1" layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Box fx:id="box11" depth="200.0" disable="true" height="200.0" layoutX="250.0" layoutY="250.0" rotate="-0.0" translateZ="100.0" visible="false" width="200.0">
+               <rotationAxis>
+                  <Point3D y="2.0" z="1.0" />
+               </rotationAxis>
+            </Box>
+            <PointLight color="CHARTREUSE" layoutX="74.0" layoutY="421.0" lightOn="true" translateZ="-300.0" />
+            <AmbientLight color="CHARTREUSE" layoutX="454.0" layoutY="26.0" lightOn="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
